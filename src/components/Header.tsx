@@ -4,7 +4,7 @@ interface NavProps {
 
 export default function Header({ fraunces }: NavProps) {
   return (
-    <div className="flex flex-col gap-14 my-40">
+    <div className="flex flex-col gap-14 my-60">
       <div className="gradient"></div>
 
       <div className={`${fraunces.className} text-7xl uppercase`}>
@@ -14,12 +14,11 @@ export default function Header({ fraunces }: NavProps) {
         and UX/UI Designer.
       </div>
       <p className="text-2xl ml-10">
-        I like to craft solid and scalable full-stack products with engaging and
-        intuitive user experiences. Based in Tokyo, Japan.
+        I like coding, data and art. Based in Tokyo, Japan.
       </p>
       <ul className="uppercase text-xl ml-10">
         <li>
-          Check out my <b>work</b> →
+          Check out my <b>projects</b> →
         </li>
         <li>
           Check out my <b>thoughts</b> →

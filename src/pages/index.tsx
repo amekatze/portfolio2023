@@ -12,41 +12,11 @@ const raleway = Raleway({ subsets: ["latin"] });
 const fraunces = Fraunces({ subsets: ["latin"] });
 
 export default function Home() {
-  useEffect(() => {
-    const circularCursor = document.getElementById("circularcursor");
-
-    const handleMouseMove = (e: any) => {
-      circularCursor.style.left = e.pageX + "px";
-      circularCursor.style.top = e.pageY + "px";
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  const changeCursorColor = (color) => {
-    const circularCursor = document.getElementById("circularcursor");
-    if (color === "hover") {
-      circularCursor.classList.add("circularcursor-hover");
-    } else {
-      circularCursor.classList.remove("circularcursor-hover");
-    }
-  };
   return (
     <main
-      className={`flex min-h-screen flex-col items-center py-24 px-32 ${raleway.className}`}
+      className={`flex min-h-screen flex-col items-center justify-center py-24 md:px-24 px-8 ${raleway.className}`}
     >
-      <div id="circularcursor"> </div>
-      <div
-        id="myHoverDiv"
-        className="hoverable-div"
-        onMouseOver={() => changeCursorColor("hover")}
-        onMouseLeave={() => changeCursorColor("default")}
-      ></div>
-      <Nav changeCursorColor={changeCursorColor} />
+      <Nav />
       <Header fraunces={fraunces} />
       <Work fraunces={fraunces} />
       <About fraunces={fraunces} />
@@ -54,9 +24,9 @@ export default function Home() {
       <Footer />
       <svg width="0" height="0">
         <filter id="grainy-blur" x="-150%" y="-150%" width="400%" height="400%">
-          <feGaussianBlur stdDeviation="49" result="blur" />
+          <feGaussianBlur stdDeviation="39" result="blur" />
         </filter>
-      </svg>
+      </svg>{" "}
     </main>
   );
 }
