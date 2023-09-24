@@ -30,7 +30,7 @@
   }
 }
 
-* {
+html {
   box-sizing: border-box;
 }
 
@@ -60,6 +60,13 @@ body {
   li a:hover {
     border-top: 1.6px solid rgb(var(--foreground-rgb));
   }
+}
+
+.hamburger {
+  z-index: 100;
+  background-color: rgb(var(--nav));
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
 }
 
 h1 {
