@@ -14,7 +14,7 @@ export default function About({ fraunces }: AboutProps) {
       </h1>
       <div className="flex flex-wrap md:px-14 justify-center gap-[60px] py-10 px-10">
         <Image
-          src="/images/IMG_6502.JPG"
+          src="/images/IMG_7025.JPG"
           width={350}
           height={350}
           alt="A photo of me!"
