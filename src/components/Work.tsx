@@ -8,7 +8,7 @@ export default function Work({ fraunces }: WorkProps) {
       <h1 className={`${fraunces.className} md:text-7xl text-5xl  uppercase `}>
         My Projects
       </h1>
-      <div className="grid xl:grid-cols-2 grid-cols-1 gap-10 w-full">
+      <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 w-full">
         <div className="project-card">
           <div className="project-image"></div>
           <h2 className={`${fraunces.className} text-3xl uppercase `}>

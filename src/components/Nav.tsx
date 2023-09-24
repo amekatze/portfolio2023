@@ -1,6 +1,6 @@
 export default function Nav({}) {
   return (
-    <div className="nav fixed top-0 w-full border-b-[1.5px] px-10 flex justify-between font-semibold">
+    <div className="nav fixed top-0 w-full border-b-[1.5px] px-10 flex justify-between items-center font-semibold">
       <span className="py-6">
         <a href="">MALI</a>
       </span>
