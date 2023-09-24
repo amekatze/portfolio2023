@@ -13,20 +13,21 @@ const fraunces = Fraunces({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-center py-24 md:px-24 px-8 ${raleway.className}`}
-    >
+    <main className={`flex flex-col min-h-screen py-24 ${raleway.className}`}>
       <Nav />
-      <Header fraunces={fraunces} />
-      <Work fraunces={fraunces} />
-      <About fraunces={fraunces} />
-      <Info fraunces={fraunces} />
-      <Footer />
+      <div className="flex flex-col md:w-screen w-[125vw]">
+        <Header fraunces={fraunces} />
+        <Work fraunces={fraunces} />
+        <About fraunces={fraunces} />
+        {/* <Info fraunces={fraunces} /> */}
+        <Footer />
+      </div>
+
       <svg width="0" height="0">
         <filter id="grainy-blur" x="-150%" y="-150%" width="400%" height="400%">
           <feGaussianBlur stdDeviation="39" result="blur" />
         </filter>
-      </svg>{" "}
+      </svg>
     </main>
   );
 }

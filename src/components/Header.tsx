@@ -4,10 +4,10 @@ interface NavProps {
 
 export default function Header({ fraunces }: NavProps) {
   return (
-    <div className="flex flex-col gap-14 my-60">
+    <div className="flex flex-col gap-14 md:my-60 my-40 md:px-36 px-6">
       <div className="gradient"></div>
 
-      <div className={`${fraunces.className} text-7xl uppercase`}>
+      <div className={`${fraunces.className} md:text-7xl text-5xl uppercase`}>
         Hi, my name is Mali.
         <br />
         I'm a Full-Stack Developer <br />

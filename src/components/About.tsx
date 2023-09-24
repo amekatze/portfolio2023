@@ -6,11 +6,20 @@ interface AboutProps {
 
 export default function About({ fraunces }: AboutProps) {
   return (
-    <div className="w-screen about my-40 pb-32">
-      <h1 className={`${fraunces.className} text-7xl uppercase text-center`}>
+    <div className="about mt-60 mb-40 pb-32">
+      <h1
+        className={`${fraunces.className} md:text-7xl text-5xl  uppercase text-center`}
+      >
         About Me
       </h1>
-      <div className="flex flex-wrap md:px-14 justify-center gap-40 px-10">
+      <div className="flex flex-wrap md:px-14 justify-center gap-[60px] py-10 px-10">
+        <Image
+          src="/images/IMG_6502.JPG"
+          width={350}
+          height={350}
+          alt="A photo of me!"
+          className="rounded-md grayscale"
+        />
         <div className="max-w-[600px] text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis
@@ -24,13 +33,6 @@ export default function About({ fraunces }: AboutProps) {
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
           consectetur, adipisci velit.
         </div>
-        <Image
-          src="/images/IMG_6502.JPG"
-          width={350}
-          height={350}
-          alt="A photo of me!"
-          className="rounded-md grayscale"
-        />
       </div>
     </div>
   );
