@@ -24,9 +24,9 @@ export default function Nav({}) {
 
   return (
     <div>
-      <div className="nav fixed top-0 w-full border-b-[1px] px-10 flex justify-between items-center font-semibold">
-        <span className="py-6">
-          <a href="">MALI KLEINWEGEN</a>
+      <div className="nav fixed top-0 w-full border-b-[1px] md:px-8 px-4 flex justify-between items-center font-semibold">
+        <span className="logo flex justify-center items-center">
+          <a href="">MK</a>
         </span>
 
         {isMobile ? (
