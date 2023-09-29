@@ -24,9 +24,9 @@ export default function Nav({}) {
 
   return (
     <div>
-      <div className="nav fixed top-0 w-full border-b-[1.5px] px-10 flex justify-between items-center font-semibold">
+      <div className="nav fixed top-0 w-full border-b-[1px] px-10 flex justify-between items-center font-semibold">
         <span className="py-6">
-          <a href="">MALI</a>
+          <a href="">MALI KLEINWEGEN</a>
         </span>
 
         {isMobile ? (
@@ -39,22 +39,22 @@ export default function Nav({}) {
           </div>
         ) : (
           <div>
-            <ul className="flex justify-between gap-8">
+            <ul className="flex justify-between gap-8 uppercase">
               <li className="py-4 px-2">
-                <a href="">my projects</a>
+                <a href="">My Projects</a>
               </li>
               <li className="py-4 px-2">
-                <a href="">about me</a>
+                <a href="">About Me</a>
               </li>
               <li className="py-4 px-2">
-                <a href="">info</a>
+                <a href="">Info</a>
               </li>
             </ul>
           </div>
         )}
 
         {hamburger && (
-          <div className="hamburger absolute top-0 right-0 mx-1 my-2 rounded-md w-[98%] h-screen">
+          <div className="hamburger absolute top-0 right-0 w-full h-fit">
             <div
               className="absolute right-0 m-6 cursor-pointer"
               onClick={handleHamburger}
@@ -74,15 +74,15 @@ export default function Nav({}) {
                 />
               </svg>
             </div>
-            <ul className="flex flex-col justify-between gap-6 mt-10 text-2xl">
+            <ul className="flex flex-col justify-between gap-6 mt-20 mb-10 text-2xl uppercase">
               <li className="py-4 px-2">
-                <a href="">my projects</a>
+                <a href="">My Projects</a>
               </li>
               <li className="py-4 px-2">
-                <a href="">about me</a>
+                <a href="">About Me</a>
               </li>
               <li className="py-4 px-2">
-                <a href="">info</a>
+                <a href="">Info</a>
               </li>
             </ul>
           </div>

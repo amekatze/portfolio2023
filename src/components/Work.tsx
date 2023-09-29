@@ -4,8 +4,8 @@ interface WorkProps {
 
 export default function Work({ fraunces }: WorkProps) {
   return (
-    <div className="px-6 md:px-24">
-      <h1 className={`${fraunces.className} md:text-7xl text-5xl  uppercase `}>
+    <div className="px-6 md:px-20 work">
+      <h1 className={`${fraunces.className} md:text-5xl text-3xl  uppercase `}>
         My Projects
       </h1>
       <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 w-full">

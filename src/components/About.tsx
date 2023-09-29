@@ -6,15 +6,15 @@ interface AboutProps {
 
 export default function About({ fraunces }: AboutProps) {
   return (
-    <div className="about mt-60 mb-40 pb-32">
+    <div className="about mt-40 mb-40 pb-32 ">
       <h1
-        className={`${fraunces.className} md:text-7xl text-5xl  uppercase text-center`}
+        className={`${fraunces.className} md:text-5xl text-3xl  uppercase text-right md:px-14`}
       >
         About Me
       </h1>
       <div className="flex flex-wrap md:px-14 justify-center gap-[60px] py-10 px-10">
         <Image
-          src="/images/IMG_7025.JPG"
+          src="/images/IMG_6502.JPG"
           width={350}
           height={350}
           alt="A photo of me!"

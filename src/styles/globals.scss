@@ -7,22 +7,29 @@
   --background-start-rgb: 250, 250, 250;
   --background-end-rgb: 255, 255, 255;
   --content: 245, 245, 245;
-  --nav: 255, 255, 255, 0.6;
+  --nav: 255, 255, 255, 0.9;
   --shadow: 43, 43, 43, 0.1;
+  --accent: 44, 218, 192;
+
   --blue: 48, 231, 255;
   --pink: 230, 0, 255;
   --cyan: 78, 255, 252;
   --green: 29, 255, 199;
+  --lilac: 167, 99, 255;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 70%;
+  --blending: soft-light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 245, 245, 245;
-    --background-start-rgb: 35, 35, 35;
-    --background-end-rgb: 38, 38, 38;
+    --background-start-rgb: 25, 25, 25;
+    --background-end-rgb: 28, 28, 28;
     --content: 20, 20, 20;
-    --nav: 35, 35, 35, 0.6;
+    --nav: 35, 35, 35, 0.9;
     --shadow: 0, 0, 0, 0.3;
+    --accent: 51, 248, 219;
     --blue: 32, 145, 160;
     --pink: 153, 20, 168;
     --cyan: 46, 157, 155;
@@ -52,6 +59,7 @@ body {
   border-color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--nav));
   z-index: 2;
+  box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
 
   li a {
     padding: 8px;
@@ -75,6 +83,10 @@ h1 {
   width: 100%;
 }
 
+.header {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 .project-card {
   height: 500px;
 
@@ -86,8 +98,10 @@ h1 {
   }
 }
 
-.about {
+.about,
+.work {
   background-color: rgb(var(--nav));
+  box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
 }
 
 .text-container {
@@ -99,18 +113,6 @@ h1 {
   top: 0;
   left: 0;
   user-select: none;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-:root {
-  --color1: 18, 113, 255;
-  --color2: 221, 74, 255;
-  --color3: 100, 220, 255;
-  --color4: 200, 50, 50;
-  --color5: 180, 180, 50;
-  --color-interactive: 140, 100, 255;
-  --circle-size: 70%;
-  --blending: soft-light;
 }
 
 @keyframes moveInCircle {
@@ -158,7 +160,7 @@ h1 {
   top: 0;
   left: 0;
   margin-top: -30px;
-  opacity: 0.8;
+  opacity: 0.6;
 
   svg {
     display: none;
@@ -174,8 +176,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--color1), 0.8) 0,
-        rgba(var(--color1), 0) 50%
+        rgba(var(--blue), 0.8) 0,
+        rgba(var(--blue), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -195,8 +197,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--color2), 0.8) 0,
-        rgba(var(--color2), 0) 50%
+        rgba(var(--pink), 0.8) 0,
+        rgba(var(--pink), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -216,8 +218,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--color3), 0.8) 0,
-        rgba(var(--color3), 0) 50%
+        rgba(var(--cyan), 0.8) 0,
+        rgba(var(--cyan), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -237,8 +239,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--color4), 0.8) 0,
-        rgba(var(--color4), 0) 50%
+        rgba(var(--green), 0.8) 0,
+        rgba(var(--green), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -258,8 +260,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--color5), 0.8) 0,
-        rgba(var(--color5), 0) 50%
+        rgba(var(--lilac), 0.8) 0,
+        rgba(var(--lilac), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);

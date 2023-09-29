@@ -1,4 +1,4 @@
-import { Raleway, Fraunces } from "next/font/google";
+import { Raleway, Fraunces, Fjalla_One } from "next/font/google";
 import React, { useEffect } from "react";
 
 import Nav from "@/components/Nav";
@@ -8,7 +8,7 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 const raleway = Raleway({ subsets: ["latin"] });
-const fraunces = Fraunces({ subsets: ["latin"] });
+const fraunces = Fjalla_One({ weight: "400", preload: false });
 
 export default function Home() {
   useEffect(() => {

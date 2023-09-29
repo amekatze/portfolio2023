@@ -1,7 +1,7 @@
 export default function Info() {
   return (
     <div>
-      <p>Info</p>
+      <p>Socials</p>
     </div>
   );
 }
