@@ -27,7 +27,7 @@
     --background-start-rgb: 25, 25, 25;
     --background-end-rgb: 28, 28, 28;
     --content: 20, 20, 20;
-    --nav: 35, 35, 35, 0.9;
+    --nav: 35, 35, 35, 0.8;
     --shadow: 0, 0, 0, 0.3;
     --accent: 51, 248, 219;
     --blue: 32, 145, 160;
@@ -87,6 +87,18 @@ h1 {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+.techstack {
+  background-color: rgb(var(--nav));
+  width: fit-content;
+  padding: 20px;
+  margin-left: 40px;
+  border-radius: 8px;
+  .icon {
+    border-radius: 50%;
+    background-color: rgb(var(--foreground-rgb));
+    padding: 2px;
+  }
+}
 .project-card {
   height: 500px;
 
