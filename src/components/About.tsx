@@ -12,11 +12,11 @@ export default function About({ fraunces }: AboutProps) {
       >
         About Me
       </h1>
-      <div className="flex flex-wrap md:px-14 justify-center gap-[60px] py-10 px-10">
+      <div className="flex flex-wrap gap-20">
         <Image
           src="/images/IMG_6502.JPG"
-          width={350}
-          height={350}
+          width={250}
+          height={250}
           alt="A photo of me!"
           className="rounded-md grayscale"
         />

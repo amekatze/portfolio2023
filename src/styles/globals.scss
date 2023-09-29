@@ -9,7 +9,6 @@
   --content: 245, 245, 245;
   --nav: 255, 255, 255, 0.9;
   --shadow: 43, 43, 43, 0.1;
-  --accent: 44, 218, 192;
 
   --blue: 48, 231, 255;
   --pink: 230, 0, 255;
@@ -93,11 +92,6 @@ h1 {
   padding: 20px;
   margin-left: 40px;
   border-radius: 8px;
-  .icon {
-    border-radius: 50%;
-    background-color: rgb(var(--foreground-rgb));
-    padding: 2px;
-  }
 }
 .project-card {
   height: 500px;

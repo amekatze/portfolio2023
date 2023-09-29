@@ -6,7 +6,7 @@ interface NavProps {
 
 export default function Header({ fraunces }: NavProps) {
   return (
-    <div className="flex flex-col gap-14 md:my-60 my-60 md:px-24 px-6 h-scren header ">
+    <div className="flex flex-col gap-14 md:my-60 my-70 md:px-24 px-6 h-scren header ">
       <div className={`${fraunces.className} md:text-8xl text-6xl uppercase`}>
         Hi, I'm Mali.
         <br />
@@ -26,7 +26,7 @@ export default function Header({ fraunces }: NavProps) {
           Check out my <b>art</b> →
         </li>
       </ul>
-      <div className="techstack flex gap-6 px-2">
+      <div className="techstack flex flex-wrap gap-6 px-2 mx-10 max-w-screen">
         <Image
           src="/icons/typescript.svg"
           width={50}
