@@ -120,11 +120,11 @@ export default function Nav({}) {
         )}
 
         <div
-          className={`hamburger  mt-[60px] right-0 w-full transition-all ${
+          className={`hamburger mt-[68px] right-0 w-full transition-all ${
             hamburger ? "open" : ""
           }`}
         >
-          <ul className="flex flex-col justify-between text-right px-10 gap-6 mt-20 mb-10 text-2xl uppercase">
+          <ul className="flex flex-col justify-between text-right px-10 pt-14 gap-6 text-2xl uppercase">
             <li className="py-4 px-2">
               <a href="">Home</a>
             </li>

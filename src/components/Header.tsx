@@ -39,87 +39,86 @@ export default function Header({ fraunces }: NavProps) {
           →
         </li>
       </ul>
-      <div className="techstack flex flex-wrap gap-6 px-2 mx-10 max-w-screen">
+      <div className="techstack flex flex-wrap gap-6 px-6 mx-10 max-w-screen">
         <a href="https://www.typescriptlang.org/" target="_blank">
-          <Image
-            src="/icons/typescript.svg"
-            width={50}
-            height={50}
-            alt="Typescript"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/typescript.svg"
+              width={50}
+              height={50}
+              alt="Typescript"
+            />
+          </div>
         </a>
         <a href="https://nextjs.org/" target="_blank">
-          <Image
-            src="/icons/nextjs.svg"
-            width={50}
-            height={50}
-            alt="Next.js"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/nextjs.svg"
+              width={50}
+              height={50}
+              alt="Next.js"
+            />
+          </div>
         </a>
         <a href="https://react.dev/" target="_blank">
-          <Image
-            src="/icons/react.svg"
-            width={50}
-            height={50}
-            alt="React.js"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/react.svg"
+              width={50}
+              height={50}
+              alt="React.js"
+            />
+          </div>
         </a>
         <a href="https://vuejs.org/" target="_blank">
-          <Image
-            src="/icons/vue.svg"
-            width={50}
-            height={50}
-            alt="Vue.js"
-            className="icon"
-          />
+          <div className="icon">
+            <Image src="/icons/vue.svg" width={50} height={50} alt="Vue.js" />
+          </div>
         </a>
         <a href="https://nodejs.org/en" target="_blank">
-          <Image
-            src="/icons/nodejs.svg"
-            width={50}
-            height={50}
-            alt="Node.js"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/nodejs.svg"
+              width={50}
+              height={50}
+              alt="Node.js"
+            />
+          </div>
         </a>
         <a href="https://www.python.org/" target="_blank">
-          <Image
-            src="/icons/python.svg"
-            width={50}
-            height={50}
-            alt="Python"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/python.svg"
+              width={50}
+              height={50}
+              alt="Python"
+            />
+          </div>
         </a>
         <a href="https://www.djangoproject.com/" target="_blank">
-          <Image
-            src="/icons/django.svg"
-            width={50}
-            height={50}
-            alt="Django"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/django.svg"
+              width={50}
+              height={50}
+              alt="Django"
+            />
+          </div>
         </a>
         <a href="https://tailwindcss.com/" target="_blank">
-          <Image
-            src="/icons/tailwind.svg"
-            width={50}
-            height={50}
-            alt="Tailwind"
-            className="icon"
-          />
+          <div className="icon">
+            <Image
+              src="/icons/tailwind.svg"
+              width={50}
+              height={50}
+              alt="Tailwind"
+            />
+          </div>
         </a>
         <a href="https://sass-lang.com/" target="_blank">
-          <Image
-            src="/icons/sass.svg"
-            width={50}
-            height={50}
-            alt="Sass"
-            className="icon"
-          />
+          <div className="icon">
+            <Image src="/icons/sass.svg" width={50} height={50} alt="Sass" />
+          </div>
         </a>
       </div>
     </div>

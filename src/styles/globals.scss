@@ -8,7 +8,7 @@
   --background-start-rgb: 250, 250, 250;
   --background-end-rgb: 255, 255, 255;
   --content: 245, 245, 245;
-  --nav: 255, 255, 255, 0.9;
+  --nav: 255, 255, 255, 0.8;
   --shadow: 43, 43, 43, 0.3;
 
   --color1: 57, 245, 155;
@@ -51,7 +51,7 @@ body {
 
 .nav {
   background-color: rgb(var(--nav));
-  z-index: 2;
+  z-index: 3;
   box-shadow: 1px 1px 4px 1px rgb(var(--shadow));
   min-height: 70px;
   border: none;
@@ -63,6 +63,7 @@ body {
   li a:hover {
     border-top: 1.6px solid rgb(var(--foreground-rgb));
     color: rgb(var(--color2));
+    text-shadow: 2px 1px 4px rgb(var(--background-end-rgb));
   }
 
   .hamburger-icon {
@@ -100,11 +101,24 @@ h1 {
 }
 
 .techstack {
-  background-color: rgb(var(--nav));
   width: fit-content;
   padding: 20px;
   margin-left: 40px;
   border-radius: 8px;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    padding: 6px;
+  }
+  .icon:hover {
+    border: 3px solid rgb(var(--color2));
+  }
 }
 
 .project-card {
