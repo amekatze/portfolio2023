@@ -76,11 +76,33 @@ export default function Nav({}) {
 
         {isMobile ? (
           <div>
-            <div className="space-y-2 cursor-pointer" onClick={handleHamburger}>
-              <span className="block w-8 h-0.5 bg-gray-600"></span>
-              <span className="block w-8 h-0.5 bg-gray-600"></span>
-              <span className="block w-5 h-0.5 bg-gray-600"></span>
-            </div>
+            {hamburger ? (
+              <div className=" cursor-pointer" onClick={handleHamburger}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-10 h-10"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            ) : (
+              <div
+                className="space-y-2 cursor-pointer"
+                onClick={handleHamburger}
+              >
+                <span className="block w-8 h-0.5 hamburger-icon"></span>
+                <span className="block w-8 h-0.5 hamburger-icon "></span>
+                <span className="block w-5 h-0.5 hamburger-icon"></span>
+              </div>
+            )}
           </div>
         ) : (
           <div>
@@ -98,44 +120,24 @@ export default function Nav({}) {
           </div>
         )}
 
-        {hamburger && (
-          <div
-            className={`hamburger absolute top-0 right-0 w-full ${
-              hamburger ? "open" : ""
-            }`}
-          >
-            <div
-              className="absolute left-0 m-6 cursor-pointer"
-              onClick={handleHamburger}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-10 h-10"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </div>
-            <ul className="flex flex-col justify-between text-right px-10 gap-6 mt-20 mb-10 text-2xl uppercase">
-              <li className="py-4 px-2">
-                <a href="">My Projects</a>
-              </li>
-              <li className="py-4 px-2">
-                <a href="">About Me</a>
-              </li>
-              <li className="py-4 px-2">
-                <a href="">Info</a>
-              </li>
-            </ul>
-          </div>
-        )}
+        <div
+          className={`hamburger  absolute mt-[60px] right-0 w-full transition-all ${
+            hamburger ? "open" : ""
+          }`}
+        >
+          <ul className="flex flex-col justify-between text-right px-10 gap-6 mt-20 mb-10 text-2xl uppercase">
+            <li className="py-4 px-2">
+              <a href="">My Projects</a>
+            </li>
+            <li className="py-4 px-2">
+              <a href="">About Me</a>
+            </li>
+            <li className="py-4 px-2">
+              <a href="">Info</a>
+            </li>
+          </ul>
+        </div>
+
         <div onClick={toggleTheme}>
           {currentTheme === "light" ? (
             <Image
