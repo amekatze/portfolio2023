@@ -10,7 +10,7 @@ export default function Header({ fraunces }: NavProps) {
       <div className={`${fraunces.className} md:text-8xl text-6xl uppercase`}>
         Hi, I'm Mali.
         <br />
-        I'm a Full-Stack Developer.
+        I'm a Full-Stack Developer & UX/UI Designer.
       </div>
       <p className="text-2xl ml-10">
         Based in Tokyo, Japan born and raised in Germany. I create beautiful
@@ -18,10 +18,22 @@ export default function Header({ fraunces }: NavProps) {
       </p>
       <ul className="uppercase text-xl ml-10">
         <li>
-          Check out my <b>github</b> →
+          Check out my
+          <b>
+            <a href="http://www.github.com/amekatze" target="_blank">
+              {" "}
+              github
+            </a>
+          </b>
+          →
         </li>
         <li>
-          Check out my <b>linkedIn</b> →
+          Check out my
+          <a href="https://www.linkedin.com/" target="_blank">
+            {" "}
+            <b>linkedin</b>
+          </a>
+          →
         </li>
       </ul>
       <div className="techstack flex flex-wrap gap-6 px-2 mx-10 max-w-screen">
@@ -51,6 +63,13 @@ export default function Header({ fraunces }: NavProps) {
           width={50}
           height={50}
           alt="Vue.js"
+          className="icon"
+        />
+        <Image
+          src="/icons/nodejs.svg"
+          width={50}
+          height={50}
+          alt="Node.js"
           className="icon"
         />
         <Image

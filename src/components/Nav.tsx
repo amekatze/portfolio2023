@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Nav({}) {
   const [isMobile, setIsMobile] = useState(false);
   const [hamburger, setHamburger] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,12 +24,55 @@ export default function Nav({}) {
     setHamburger(!hamburger);
   };
 
+  const [currentTheme, setCurrentTheme] = useState("light");
+
+  useEffect(() => {
+    const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    setCurrentTheme(preferredTheme);
+
+    const systemThemeChangeHandler = (event: any) => {
+      setCurrentTheme(event.matches ? "dark" : "light");
+    };
+
+    const systemThemeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    systemThemeMediaQuery.addEventListener("change", systemThemeChangeHandler);
+
+    // Cleanup the event listener
+    return () => {
+      systemThemeMediaQuery.removeEventListener(
+        "change",
+        systemThemeChangeHandler
+      );
+    };
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    setCurrentTheme(newTheme);
+  };
+
+  useEffect(() => {
+    applyTheme();
+  }, [currentTheme]);
+
+  const applyTheme = () => {
+    document.documentElement.classList.remove("theme-light", "theme-dark");
+    document.documentElement.classList.add(`theme-${currentTheme}`);
+  };
+
   return (
     <div>
       <div className="nav fixed top-0 w-full border-b-[1px] md:px-8 px-4 flex justify-between items-center font-semibold">
-        <span className="logo flex justify-center items-center">
-          <a href="">MK</a>
-        </span>
+        {!isMobile && (
+          <span className="logo flex justify-center items-center">
+            <a href="">MK</a>
+          </span>
+        )}
 
         {isMobile ? (
           <div>
@@ -54,9 +99,13 @@ export default function Nav({}) {
         )}
 
         {hamburger && (
-          <div className="hamburger absolute top-0 right-0 w-full h-fit">
+          <div
+            className={`hamburger absolute top-0 right-0 w-full ${
+              hamburger ? "open" : ""
+            }`}
+          >
             <div
-              className="absolute right-0 m-6 cursor-pointer"
+              className="absolute left-0 m-6 cursor-pointer"
               onClick={handleHamburger}
             >
               <svg
@@ -74,7 +123,7 @@ export default function Nav({}) {
                 />
               </svg>
             </div>
-            <ul className="flex flex-col justify-between gap-6 mt-20 mb-10 text-2xl uppercase">
+            <ul className="flex flex-col justify-between text-right px-10 gap-6 mt-20 mb-10 text-2xl uppercase">
               <li className="py-4 px-2">
                 <a href="">My Projects</a>
               </li>
@@ -87,6 +136,25 @@ export default function Nav({}) {
             </ul>
           </div>
         )}
+        <div onClick={toggleTheme}>
+          {currentTheme === "light" ? (
+            <Image
+              src="/icons/moon.svg"
+              width={30}
+              height={30}
+              alt="Dark Mode"
+              className="icon"
+            />
+          ) : (
+            <Image
+              src="/icons/sun.svg"
+              width={30}
+              height={30}
+              alt="Light Mode"
+              className="icon"
+            />
+          )}
+        </div>
       </div>
     </div>
   );
