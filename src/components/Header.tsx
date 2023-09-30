@@ -6,11 +6,12 @@ interface NavProps {
 
 export default function Header({ fraunces }: NavProps) {
   return (
-    <div className="flex flex-col gap-14 md:my-60 my-60 md:px-24 px-6 h-scren header ">
+    <div className="flex flex-col gap-14 md:my-64 my-40 md:px-24 px-6 h-scren header ">
       <div className={`${fraunces.className} md:text-8xl text-6xl uppercase`}>
         Hi, I'm Mali.
         <br />
-        I'm a Full-Stack Developer & UX/UI Designer.
+        I'm a Full-Stack Developer
+        <br />& UX/UI Designer.
       </div>
       <p className="text-2xl ml-10">
         Based in Tokyo, Japan born and raised in Germany. I create beautiful
@@ -22,17 +23,19 @@ export default function Header({ fraunces }: NavProps) {
           <b>
             <a href="http://www.github.com/amekatze" target="_blank">
               {" "}
-              github
+              github{" "}
             </a>
           </b>
           →
         </li>
         <li>
           Check out my
-          <a href="https://www.linkedin.com/" target="_blank">
-            {" "}
-            <b>linkedin</b>
-          </a>
+          <b>
+            <a href="https://www.linkedin.com/" target="_blank">
+              {" "}
+              linkedin{" "}
+            </a>
+          </b>
           →
         </li>
       </ul>
