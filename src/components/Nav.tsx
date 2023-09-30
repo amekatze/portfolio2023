@@ -126,6 +126,9 @@ export default function Nav({}) {
         >
           <ul className="flex flex-col justify-between text-right px-10 gap-6 mt-20 mb-10 text-2xl uppercase">
             <li className="py-4 px-2">
+              <a href="">Home</a>
+            </li>
+            <li className="py-4 px-2">
               <a href="">My Projects</a>
             </li>
             <li className="py-4 px-2">
