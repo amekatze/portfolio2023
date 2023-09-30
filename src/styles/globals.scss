@@ -50,11 +50,11 @@ body {
 }
 
 .nav {
-  border-color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--nav));
   z-index: 2;
-  box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
-  min-height: 60px;
+  box-shadow: 1px 1px 4px 1px rgb(var(--shadow));
+  min-height: 70px;
+  border: none;
 
   li a {
     padding: 8px;
@@ -62,6 +62,7 @@ body {
   }
   li a:hover {
     border-top: 1.6px solid rgb(var(--foreground-rgb));
+    color: rgb(var(--color2));
   }
 
   .hamburger-icon {
@@ -74,7 +75,7 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  height: 0.1px;
+  height: 0px;
   background-color: rgb(var(--nav));
   backdrop-filter: blur(9px);
   box-shadow: 1px 1px 4px 0 rgb(var(--shadow));

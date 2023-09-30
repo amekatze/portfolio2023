@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function Nav({}) {
   const [isMobile, setIsMobile] = useState(false);
   const [hamburger, setHamburger] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -67,7 +66,7 @@ export default function Nav({}) {
 
   return (
     <div>
-      <div className="nav fixed top-0 w-full border-b-[1px] md:px-8 px-4 flex justify-between items-center font-semibold">
+      <div className="nav fixed top-0 w-full md:px-8 px-4 flex justify-between items-center font-semibold">
         {!isMobile && (
           <span className="logo flex justify-center items-center">
             <a href="">MK</a>
@@ -138,7 +137,7 @@ export default function Nav({}) {
           </ul>
         </div>
 
-        <div onClick={toggleTheme}>
+        <div onClick={toggleTheme} className="cursor-pointer">
           {currentTheme === "light" ? (
             <Image
               src="/icons/moon.svg"
