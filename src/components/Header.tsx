@@ -39,7 +39,7 @@ export default function Header({ fraunces }: NavProps) {
           →
         </li>
       </ul>
-      <div className="techstack flex flex-wrap gap-6 px-6 mx-10 max-w-screen">
+      <div className="techstack flex flex-wrap gap-6 max-w-screen">
         <a href="https://www.typescriptlang.org/" target="_blank">
           <div className="icon">
             <Image
