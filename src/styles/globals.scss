@@ -11,12 +11,12 @@
   --nav: 255, 255, 255, 0.9;
   --shadow: 43, 43, 43, 0.3;
 
-  --blue: 48, 231, 255;
-  --pink: 230, 0, 255;
-  --cyan: 78, 255, 252;
-  --green: 29, 255, 199;
-  --lilac: 167, 99, 255;
-  --color-interactive: 140, 100, 255;
+  --color1: 57, 245, 155;
+  --color2: 11, 203, 191;
+  --color3: 55, 245, 234;
+  --color4: 32, 221, 246;
+  --color5: 32, 118, 246;
+  --color-interactive: 32, 118, 246;
   --circle-size: 70%;
   --blending: soft-light;
 }
@@ -29,7 +29,6 @@
   --content: 20, 20, 20;
   --nav: 25, 25, 25, 0.9;
   --shadow: 0, 0, 0, 0.3;
-  --accent: 51, 248, 219;
 }
 
 html {
@@ -75,13 +74,13 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  height: 1px;
+  height: 0.1px;
   background-color: rgb(var(--nav));
   backdrop-filter: blur(9px);
   box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
-  opacity: 0;
   pointer-events: none;
   transition: all 0.3s linear;
+  overflow: hidden;
 }
 
 .open {
@@ -106,6 +105,7 @@ h1 {
   margin-left: 40px;
   border-radius: 8px;
 }
+
 .project-card {
   height: 500px;
 
@@ -195,8 +195,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--blue), 0.8) 0,
-        rgba(var(--blue), 0) 50%
+        rgba(var(--color1), 0.8) 0,
+        rgba(var(--color1), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -216,8 +216,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--pink), 0.8) 0,
-        rgba(var(--pink), 0) 50%
+        rgba(var(--color2), 0.8) 0,
+        rgba(var(--color2), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -237,8 +237,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--cyan), 0.8) 0,
-        rgba(var(--cyan), 0) 50%
+        rgba(var(--color3), 0.8) 0,
+        rgba(var(--color3), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -258,8 +258,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--green), 0.8) 0,
-        rgba(var(--green), 0) 50%
+        rgba(var(--color4), 0.8) 0,
+        rgba(var(--color4), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
@@ -279,8 +279,8 @@ h1 {
     position: absolute;
     background: radial-gradient(
         circle at center,
-        rgba(var(--lilac), 0.8) 0,
-        rgba(var(--lilac), 0) 50%
+        rgba(var(--color5), 0.8) 0,
+        rgba(var(--color5), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);

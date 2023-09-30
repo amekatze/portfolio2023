@@ -121,7 +121,7 @@ export default function Nav({}) {
         )}
 
         <div
-          className={`hamburger  absolute mt-[60px] right-0 w-full transition-all ${
+          className={`hamburger  mt-[60px] right-0 w-full transition-all ${
             hamburger ? "open" : ""
           }`}
         >
