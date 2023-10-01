@@ -1,10 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import projects from "../projects.json";
+// import projects from "../projects.json";
 
 interface WorkProps {
   fjalla: any;
 }
+
+const projects = [
+  {
+    id: 1,
+    title: "Task Manager",
+    description: "A project management tool.",
+    images: ["/images/taskmanager.png", "/images/taskmanager_addtask.png"],
+    cover: "/images/taskmanager.png",
+  },
+];
 
 export default function Work({ fjalla }: WorkProps) {
   return (

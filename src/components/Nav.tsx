@@ -92,7 +92,7 @@ export default function Nav() {
         )}
 
         <div
-          className={`hamburger mt-[70px] right-0 w-full transition-all ${
+          className={`hamburger mt-[69px] right-0 w-full transition-all ${
             hamburger ? "open" : ""
           }`}
         >
