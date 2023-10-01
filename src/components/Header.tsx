@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ fjalla }) => {
           →
         </li>
       </ul>
-      <div className="techstack grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-screen">
+      <div className="techstack flex flex-wrap gap-6 max-w-screen">
         <IconLink
           href="https://www.typescriptlang.org/"
           src="/icons/typescript.svg"
