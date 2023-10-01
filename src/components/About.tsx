@@ -15,11 +15,11 @@ export default function About({ fjalla }: AboutProps) {
       <div className="flex flex-wrap gap-20">
         <Image
           src="/images/IMG_8117.JPG"
-          width={250}
+          width={260}
           height={250}
           alt="A photo of me!"
           loading="lazy"
-          className="rounded-md grayscale"
+          className="rounded-md object-cover"
         />
         <div className="max-w-[600px] text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
