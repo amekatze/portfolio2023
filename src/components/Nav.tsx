@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTheme } from "../contexts/ThemeContext";
 
-export default function Nav({}) {
+export default function Nav() {
   const [isMobile, setIsMobile] = useState(false);
   const [hamburger, setHamburger] = useState(false);
+
+  const { currentTheme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,38 +25,6 @@ export default function Nav({}) {
 
   const handleHamburger = () => {
     setHamburger(!hamburger);
-  };
-
-  const [currentTheme, setCurrentTheme] = useState("light");
-
-  useEffect(() => {
-    const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-    setCurrentTheme(preferredTheme);
-
-    const systemThemeChangeHandler = (event: any) => {
-      setCurrentTheme(event.matches ? "dark" : "light");
-    };
-
-    const systemThemeMediaQuery = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    );
-    systemThemeMediaQuery.addEventListener("change", systemThemeChangeHandler);
-
-    // Cleanup the event listener
-    return () => {
-      systemThemeMediaQuery.removeEventListener(
-        "change",
-        systemThemeChangeHandler
-      );
-    };
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-    setCurrentTheme(newTheme);
   };
 
   useEffect(() => {

@@ -1,6 +1,13 @@
-import "@/styles/globals.scss";
+import { ThemeProvider } from "../contexts/ThemeContext";
+import "@/styles/globals.scss"; // Import your global styles
 import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <ThemeProvider>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
+
+export default MyApp;
