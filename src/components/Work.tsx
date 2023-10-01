@@ -20,13 +20,13 @@ export default function Work({ fjalla }: WorkProps) {
             passHref
           >
             <div className="project-card">
-              <div className="project-image mb-4 object-cover">
+              <div className="project-image mb-4">
                 <Image
                   src={project.cover}
                   width={500}
                   height={500}
                   alt="Project Image"
-                  className="rounded-md w-full h-full"
+                  className="rounded-md w-full h-full object-cover"
                 />
               </div>
               <h2 className={`${fjalla.className} text-3xl uppercase `}>
