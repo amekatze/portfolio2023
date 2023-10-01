@@ -26,6 +26,7 @@ export default function Work({ fjalla }: WorkProps) {
                   width={500}
                   height={500}
                   alt="Project Image"
+                  loading="lazy"
                   className="rounded-md w-full h-full object-cover"
                 />
               </div>
