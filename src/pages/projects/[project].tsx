@@ -15,7 +15,7 @@ export default function Project() {
   const project = projects.find((project) => project.id === projectId);
 
   return (
-    <Layout>
+    <>
       <div className="px-6 md:px-20 mt-28 py-10 pb-20 work">
         <h1 className={`${fjalla.className} md:text-5xl text-3xl uppercase `}>
           {project ? project.title : "Project Not Found"}
@@ -27,6 +27,6 @@ export default function Project() {
           </div>
         )}
       </div>
-    </Layout>
+    </>
   );
 }
