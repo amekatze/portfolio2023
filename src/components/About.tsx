@@ -6,7 +6,7 @@ interface AboutProps {
 
 export default function About({ fjalla }: AboutProps) {
   return (
-    <div className="about mt-10 pt-10 pb-20 px-6 md:px-20">
+    <div className="about mt-10 pt-10 pb-20 px-6 md:px-20 flex items-center flex-col">
       <h1
         className={`${fjalla.className} md:text-5xl text-3xl uppercase text-right md:px-14`}
       >
@@ -14,7 +14,7 @@ export default function About({ fjalla }: AboutProps) {
       </h1>
       <div className="flex flex-wrap gap-20">
         <Image
-          src="/images/IMG_8117.JPG"
+          src="/images/IMG_8117.jpg"
           width={260}
           height={250}
           alt="A photo of me!"
