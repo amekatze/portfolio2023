@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-interface NavProps {
+interface HeaderProps {
   fjalla: any;
 }
 
-export default function Header({ fjalla }: NavProps) {
+const Header: React.FC<HeaderProps> = ({ fjalla }) => {
   return (
-    <div className="flex flex-col gap-14 md:my-64 my-40 md:px-24 px-6 h-scren header ">
+    <div className="flex flex-col gap-14 md:my-64 my-40 md:px-24 px-6 h-screen header">
       <div className={`${fjalla.className} md:text-8xl text-6xl uppercase`}>
         Hi, I'm Mali.
         <br />
@@ -19,108 +19,101 @@ export default function Header({ fjalla }: NavProps) {
       </p>
       <ul className="uppercase text-xl ml-10">
         <li>
-          Check out my
+          Check out my{" "}
           <b>
-            <a href="http://www.github.com/amekatze" target="_blank">
-              {" "}
-              github{" "}
+            <a
+              href="http://www.github.com/amekatze"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
             </a>
-          </b>
+          </b>{" "}
           →
         </li>
         <li>
-          Check out my
+          Check out my{" "}
           <b>
-            <a href="https://www.linkedin.com/" target="_blank">
-              {" "}
-              linkedin{" "}
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
             </a>
-          </b>
+          </b>{" "}
           →
         </li>
       </ul>
-      <div className="techstack flex flex-wrap gap-6 max-w-screen">
-        <a href="https://www.typescriptlang.org/" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/typescript.svg"
-              width={50}
-              height={50}
-              alt="Typescript"
-            />
-          </div>
-        </a>
-        <a href="https://nextjs.org/" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/nextjs.svg"
-              width={50}
-              height={50}
-              alt="Next.js"
-            />
-          </div>
-        </a>
-        <a href="https://react.dev/" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/react.svg"
-              width={50}
-              height={50}
-              alt="React.js"
-            />
-          </div>
-        </a>
-        <a href="https://vuejs.org/" target="_blank">
-          <div className="icon">
-            <Image src="/icons/vue.svg" width={50} height={50} alt="Vue.js" />
-          </div>
-        </a>
-        <a href="https://nodejs.org/en" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/nodejs.svg"
-              width={50}
-              height={50}
-              alt="Node.js"
-            />
-          </div>
-        </a>
-        <a href="https://www.python.org/" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/python.svg"
-              width={50}
-              height={50}
-              alt="Python"
-            />
-          </div>
-        </a>
-        <a href="https://www.djangoproject.com/" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/django.svg"
-              width={50}
-              height={50}
-              alt="Django"
-            />
-          </div>
-        </a>
-        <a href="https://tailwindcss.com/" target="_blank">
-          <div className="icon">
-            <Image
-              src="/icons/tailwind.svg"
-              width={50}
-              height={50}
-              alt="Tailwind"
-            />
-          </div>
-        </a>
-        <a href="https://sass-lang.com/" target="_blank">
-          <div className="icon">
-            <Image src="/icons/sass.svg" width={50} height={50} alt="Sass" />
-          </div>
-        </a>
+      <div className="techstack grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-screen">
+        <IconLink
+          href="https://www.typescriptlang.org/"
+          src="/icons/typescript.svg"
+          alt="Typescript"
+        />
+        <IconLink
+          href="https://nextjs.org/"
+          src="/icons/nextjs.svg"
+          alt="Next.js"
+        />
+        <IconLink
+          href="https://react.dev/"
+          src="/icons/react.svg"
+          alt="React.js"
+        />
+
+        <IconLink href="https://vuejs.org/" src="/icons/vue.svg" alt="Vue.js" />
+
+        <IconLink
+          href="https://nodejs.org/en"
+          src="/icons/nodejs.svg"
+          alt="Node.js"
+        />
+
+        <IconLink
+          href="https://www.python.org/"
+          src="/icons/python.svg"
+          alt="Python"
+        />
+
+        <IconLink
+          href="https://www.djangoproject.com/"
+          src="/icons/django.svg"
+          alt="Django"
+        />
+
+        <IconLink
+          href="https://tailwindcss.com/"
+          src="/icons/tailwind.svg"
+          alt="Tailwind"
+        />
+
+        <IconLink
+          href="https://sass-lang.com/"
+          src="/icons/sass.svg"
+          alt="Sass"
+        />
+
+        {/* Add more IconLink components for additional icons */}
       </div>
     </div>
   );
+};
+
+interface IconLinkProps {
+  href: string;
+  src: string;
+  alt: string;
 }
+
+const IconLink: React.FC<IconLinkProps> = ({ href, src, alt }) => {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <div className="icon">
+        <Image src={src} width={50} height={50} alt={alt} />
+      </div>
+    </a>
+  );
+};
+
+export default Header;

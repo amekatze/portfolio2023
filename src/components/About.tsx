@@ -17,7 +17,8 @@ export default function About({ fjalla }: AboutProps) {
           src="/images/IMG_6502.JPG"
           width={250}
           height={250}
-          alt="A photo of me!"
+          alt="A photo of me"
+          loading="lazy"
           className="rounded-md grayscale"
         />
         <div className="max-w-[600px] text-xl">
