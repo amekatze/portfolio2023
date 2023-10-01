@@ -79,14 +79,14 @@ export default function Nav() {
           <div>
             <ul className="flex justify-between gap-8 uppercase">
               <li className="py-4 px-2">
-                <a href="">My Projects</a>
+                <a href="#work">My Projects</a>
               </li>
               <li className="py-4 px-2">
-                <a href="">About Me</a>
+                <a href="#about">About Me</a>
               </li>
-              <li className="py-4 px-2">
+              {/* <li className="py-4 px-2">
                 <a href="">Info</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         )}
