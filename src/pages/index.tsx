@@ -1,8 +1,9 @@
 import { Fjalla_One } from "next/font/google";
+import dynamic from "next/dynamic";
 import Layout from "@/components/Layout";
 import Header from "@/components/Header";
-import Work from "@/components/Work";
 import About from "@/components/About";
+const Work = dynamic(() => import("@/components/Work"));
 
 const fjalla = Fjalla_One({ weight: "400", preload: false });
 
