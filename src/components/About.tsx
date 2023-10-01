@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 interface AboutProps {
-  fraunces: any;
+  fjalla: any;
 }
 
-export default function About({ fraunces }: AboutProps) {
+export default function About({ fjalla }: AboutProps) {
   return (
     <div className="about mt-10 pt-10 pb-20 px-6 md:px-20">
       <h1
-        className={`${fraunces.className} md:text-5xl text-3xl uppercase text-right md:px-14`}
+        className={`${fjalla.className} md:text-5xl text-3xl uppercase text-right md:px-14`}
       >
         About Me
       </h1>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Nav({}) {
@@ -69,7 +70,7 @@ export default function Nav({}) {
       <div className="nav fixed top-0 w-full md:px-8 px-4 flex justify-between items-center font-semibold">
         {!isMobile && (
           <span className="logo flex justify-center items-center">
-            <a href="">MK</a>
+            <Link href={`/`}>MK</Link>
           </span>
         )}
 

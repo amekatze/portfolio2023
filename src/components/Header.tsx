@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 interface NavProps {
-  fraunces: any;
+  fjalla: any;
 }
 
-export default function Header({ fraunces }: NavProps) {
+export default function Header({ fjalla }: NavProps) {
   return (
     <div className="flex flex-col gap-14 md:my-64 my-40 md:px-24 px-6 h-scren header ">
-      <div className={`${fraunces.className} md:text-8xl text-6xl uppercase`}>
+      <div className={`${fjalla.className} md:text-8xl text-6xl uppercase`}>
         Hi, I'm Mali.
         <br />
         I'm a Full-Stack Developer
