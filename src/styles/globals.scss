@@ -81,7 +81,7 @@ body {
   backdrop-filter: blur(9px);
   box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
   pointer-events: none;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   overflow: hidden;
 }
 
