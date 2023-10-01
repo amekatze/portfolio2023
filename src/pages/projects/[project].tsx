@@ -1,6 +1,6 @@
 import { Fjalla_One } from "next/font/google";
 import { useRouter } from "next/router";
-import Layout from "@/components/Layout";
+import Image from "next/image";
 import projects from "../../projects.json";
 
 const fjalla = Fjalla_One({ weight: "400", preload: false });
@@ -22,8 +22,16 @@ export default function Project() {
         </h1>
         {project && (
           <div>
+            {project.images.map((image) => (
+              <Image
+                src={image}
+                width={800}
+                height={800}
+                alt="Project Image"
+                className="rounded-md mb-2"
+              />
+            ))}
             <p>{project.description}</p>
-            {/* Add more details or components based on your project object */}
           </div>
         )}
       </div>
