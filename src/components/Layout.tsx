@@ -7,7 +7,7 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const raleway = Raleway({ subsets: ["latin"], display: "swap" });
+const raleway = Raleway({ subsets: ["latin"] });
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   useEffect(() => {
