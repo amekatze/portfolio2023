@@ -5,5 +5,12 @@
     "description": "A project management tool.",
     "images": ["/images/taskmanager.png", "/images/taskmanager_addtask.png"],
     "cover": "/images/taskmanager.png"
+  },
+  {
+    "id": 2,
+    "title": "Car Dashboard",
+    "description": "Control panel dashboard for an electronic car.",
+    "images": ["/images/car_dashboard.png"],
+    "cover": "/images/car_dashboard.png"
   }
 ]
