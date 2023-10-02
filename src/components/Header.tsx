@@ -14,8 +14,9 @@ const Header: React.FC<HeaderProps> = ({ fjalla }) => {
         <br />& UX/UI Designer.
       </div>
       <p className="text-2xl ml-10">
-        Based in Tokyo, Japan. Born and raised in Germany. I create beautiful
-        solutions to complex problems and questions.
+        I create beautiful solutions to complex problems and questions.
+        <br />
+        Based in Tokyo, Japan. Born and raised in Germany.
       </p>
       <ul className="uppercase text-xl ml-10">
         <li>
@@ -35,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ fjalla }) => {
           Check out my{" "}
           <b>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/mali-kl/"
               target="_blank"
               rel="noopener noreferrer"
             >
