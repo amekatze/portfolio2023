@@ -30,7 +30,7 @@ export default function Work({ fjalla }: WorkProps) {
                   height={500}
                   alt="Project Image"
                   loading="lazy"
-                  className="rounded-md w-full h-full object-cover transition-transform group-hover:scale-110"
+                  className="rounded-md w-full h-full object-cover transition-transform group-hover:scale-125"
                 />
                 <div className="project-description overlay absolute bottom-0 left-0 w-full h-20">
                   <p className="ml-10  text-center absolute bottom-1/2 transform translate-y-1/2">
