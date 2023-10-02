@@ -79,10 +79,10 @@ export default function Nav() {
           <div>
             <ul className="flex justify-between gap-8 uppercase">
               <li className="py-4 px-2">
-                <a href="#work">My Projects</a>
+                <Link href={`/#work`}>My Projects</Link>
               </li>
               <li className="py-4 px-2">
-                <a href="#about">About Me</a>
+                <Link href={`/#about`}>About Me</Link>
               </li>
               {/* <li className="py-4 px-2">
                 <a href="">Info</a>
@@ -96,18 +96,19 @@ export default function Nav() {
             hamburger ? "open" : ""
           }`}
         >
-          <ul className="flex flex-col justify-between text-right px-10 pt-14 gap-6 text-2xl uppercase">
-            <li className="py-4 px-2">
-              <a href="">Home</a>
+          <ul className="flex flex-col justify-between text-right px-10 pt-14 gap-6 text-2xl uppercase z-200">
+            <li className="py-4 px-2" onClick={handleHamburger}>
+              <Link href={`/`}>Home</Link>
             </li>
             <li className="py-4 px-2">
-              <a href="">My Projects</a>
+              <Link href={`/#work`} onClick={handleHamburger}>
+                My Projects
+              </Link>
             </li>
             <li className="py-4 px-2">
-              <a href="">About Me</a>
-            </li>
-            <li className="py-4 px-2">
-              <a href="">Info</a>
+              <Link href={`/#about`} onClick={handleHamburger}>
+                About Me
+              </Link>
             </li>
           </ul>
         </div>

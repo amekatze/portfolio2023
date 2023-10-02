@@ -8,7 +8,7 @@ interface WorkProps {
 
 export default function Work({ fjalla }: WorkProps) {
   return (
-    <div className="px-6 md:px-20 mt-10 py-10 pb-20 work" id="work">
+    <div className="px-6 md:px-20 md:mt-10 mt-40 py-10 pb-20 work" id="work">
       <h1 className={`${fjalla.className} md:text-5xl text-3xl uppercase `}>
         My Projects
       </h1>
