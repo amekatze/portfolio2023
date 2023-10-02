@@ -144,6 +144,20 @@ h1 {
     transition: opacity 0.3s ease-in-out;
     height: 30%;
   }
+
+  .design,
+  .code {
+    border-radius: 10px;
+    padding: 1px 7px;
+    margin-right: 8px;
+    color: #212121;
+  }
+  .design {
+    background-color: rgb(var(--color1));
+  }
+  .code {
+    background-color: rgb(var(--color3));
+  }
 }
 
 .about,
