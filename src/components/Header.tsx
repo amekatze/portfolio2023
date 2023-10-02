@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ fjalla }) => {
         <br />& UX/UI Designer.
       </div>
       <p className="text-2xl ml-10">
-        Based in Tokyo, Japan born and raised in Germany. I create beautiful
+        Based in Tokyo, Japan. Born and raised in Germany. I create beautiful
         solutions to complex problems and questions.
       </p>
       <ul className="uppercase text-xl ml-10">
@@ -93,8 +93,6 @@ const Header: React.FC<HeaderProps> = ({ fjalla }) => {
           src="/icons/sass.svg"
           alt="Sass"
         />
-
-        {/* Add more IconLink components for additional icons */}
       </div>
     </div>
   );
