@@ -16,7 +16,7 @@ export default function Work({ fjalla }: WorkProps) {
       : projects.filter((project) => project.tags.includes(filter));
 
   return (
-    <div className="px-6 md:px-20 sm:mt-10 mt-48 py-10 pb-20 work" id="work">
+    <div className="px-6 md:px-20 sm:mt-10 mt-80 py-10 pb-20 work" id="work">
       <h1 className={`${fjalla.className} md:text-5xl text-3xl uppercase`}>
         My Projects
       </h1>
