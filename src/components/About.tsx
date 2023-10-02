@@ -7,7 +7,7 @@ interface AboutProps {
 export default function About({ fjalla }: AboutProps) {
   return (
     <div
-      className="about mt-10 pt-10 pb-20 px-6 md:px-20 flex items-center flex-col"
+      className="about mt-20 pt-10 pb-20 px-6 md:px-20 flex items-center flex-col"
       id="about"
     >
       <h1
