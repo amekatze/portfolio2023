@@ -84,6 +84,12 @@ const Header: React.FC<HeaderProps> = ({ fjalla }) => {
         />
 
         <IconLink
+          href="https://www.docker.com/"
+          src="/icons/docker.svg"
+          alt="Docker"
+        />
+
+        <IconLink
           href="https://tailwindcss.com/"
           src="/icons/tailwind.svg"
           alt="Tailwind"
