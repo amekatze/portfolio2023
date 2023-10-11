@@ -25,17 +25,23 @@ export default function About({ fjalla }: AboutProps) {
           className="rounded-md object-cover"
         />
         <div className="max-w-[600px] text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          con. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatu. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id es. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, to. Nemo enim ipsam voluptatem quia
-          voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma.
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit.
+          Hi, I'm Mali. I'm a UX/UI Designer and Fullstack Developer. With a
+          background in IT as a Technical Coordinator, primarily in the
+          logistics field, I've navigated the complexities of managing data and
+          transforming it into user-friendly, front-facing solutions. My journey
+          in technology has equipped me with a versatile skill set, enabling me
+          to seamlessly integrate design aesthetics with the intricacies of
+          fullstack development.
+          <br />
+          <br />
+          I've led projects and managed teams, bringing a collaborative and
+          leadership dimension to my skill set. I understand how to initiate and
+          successfully conclude a project, conduct thorough research to
+          comprehend end users, and effectively communicate with stakeholders.
+          Beyond the tech realm, I've also embraced my artistic side as a
+          freelance artist. What started as a hobby has organically woven into
+          my professional path, allowing me to fuse my understanding of design
+          and aesthetics into every aspect of my career.
         </div>
       </div>
     </div>
