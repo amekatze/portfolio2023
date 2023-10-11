@@ -5,7 +5,7 @@
     "description": "A project management tool.",
     "images": ["/images/taskmanager.png", "/images/taskmanager_addtask.png"],
     "cover": "/images/taskmanager.png",
-    "tags": ["design", "code"]
+    "tags": ["design"]
   },
   {
     "id": 2,
@@ -13,6 +13,8 @@
     "description": "Control panel dashboard for an electronic car.",
     "images": ["/images/car_dashboard.png"],
     "cover": "/images/car_dashboard.png",
-    "tags": ["design"]
+    "tags": ["design", "code"],
+    "live": "https://dashboard-car-cyan.vercel.app/",
+    "github": "https://github.com/amekatze/dashboard-car"
   }
 ]

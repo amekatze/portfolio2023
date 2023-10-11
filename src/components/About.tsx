@@ -15,10 +15,10 @@ export default function About({ fjalla }: AboutProps) {
       >
         About Me
       </h1>
-      <div className="flex flex-wrap gap-20">
+      <div className="flex flex-wrap gap-16">
         <Image
           src="/images/IMG_8117.jpg"
-          width={260}
+          width={300}
           height={250}
           alt="A photo of me!"
           loading="lazy"
