@@ -38,7 +38,7 @@ export default function Project() {
           <div className="flex gap-4 mt-4">
             {project.live && (
               <a href={project.live} target="_blank" rel="noopener noreferrer">
-                <div className="w-20 h-20 border-2 border-white rounded-full flex items-center justify-center">
+                <div className="project-link w-20 h-20 rounded-full flex items-center justify-center">
                   LIVE
                 </div>
               </a>
@@ -49,7 +49,7 @@ export default function Project() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-20 h-20 border-2 border-white rounded-full flex items-center justify-center">
+                <div className="project-link w-20 h-20 rounded-full flex items-center justify-center">
                   CODE
                 </div>
               </a>

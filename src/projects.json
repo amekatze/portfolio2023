@@ -16,5 +16,15 @@
     "tags": ["design", "code"],
     "live": "https://dashboard-car-cyan.vercel.app/",
     "github": "https://github.com/amekatze/dashboard-car"
+  },
+  {
+    "id": 3,
+    "title": "Portfolio 2023",
+    "description": "My personal portfolio website.",
+    "images": ["/images/portfolio.png", "/images/portfoliolight.png"],
+    "cover": "/images/portfolio.png",
+    "tags": ["design", "code"],
+    "live": "https://maliklein.vercel.app/",
+    "github": "https://github.com/amekatze/portfolio2023"
   }
 ]
