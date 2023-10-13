@@ -160,6 +160,16 @@ h1 {
   }
 }
 
+.project-link {
+  border: 2px solid rgb(var(--foreground-rgb));
+}
+
+.project-link:hover {
+  background-color: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-start-rgb));
+  font-weight: bold;
+}
+
 .about,
 .work {
   background-color: rgb(var(--nav));
