@@ -44,6 +44,40 @@ export default function About({ fjalla }: AboutProps) {
           and aesthetics into every aspect of my career.
         </div>
       </div>
+      <div className="mt-20">
+        <p className="text-3xl">Want to get in touch?</p>
+        <div className="flex gap-6 justify-center mt-6">
+          <a
+            href="http://www.github.com/amekatze"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/icons/github.svg"
+              width={50}
+              height={50}
+              alt="Link to my Github"
+              loading="lazy"
+              className="socials"
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mali-kl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/icons/linkedin.svg"
+              width={50}
+              height={50}
+              alt="Link to my LinkedIn"
+              loading="lazy"
+              className="socials"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

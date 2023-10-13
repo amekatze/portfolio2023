@@ -18,6 +18,7 @@
   --color-interactive: 32, 118, 246;
   --circle-size: 70%;
   --blending: soft-light;
+  --svg: brightness(0) invert(0);
 }
 
 .theme-dark {
@@ -27,6 +28,7 @@
   --content: 20, 20, 20;
   --nav: 25, 25, 25, 0.9;
   --shadow: 0, 0, 0, 0.3;
+  --svg: brightness(0) invert(1);
 }
 
 html {
@@ -174,6 +176,15 @@ h1 {
 .work {
   background-color: rgb(var(--nav));
   box-shadow: 1px 1px 4px 0 rgb(var(--shadow));
+}
+
+.about {
+  .socials {
+    filter: var(--svg);
+  }
+  .socials:hover {
+    transform: scale(1.1);
+  }
 }
 
 .text-container {
