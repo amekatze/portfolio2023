@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Task Manager",
-    "description": "A project management tool.",
+    "description": "A project management tool designed for large teams, streamlining tasks, and enhancing collaboration. This tool offers features for efficient task organization, assignment, and progress tracking.",
     "images": ["/images/taskmanager.png", "/images/taskmanager_addtask.png"],
     "cover": "/images/taskmanager.png",
     "tags": ["design"]
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Car Dashboard",
-    "description": "Control panel dashboard for an electronic car.",
+    "description": "A dashboard for electronic cars. Shows real-time info like performance and climate information.",
     "images": ["/images/car_dashboard.png"],
     "cover": "/images/car_dashboard.png",
     "tags": ["design", "code"],
@@ -26,5 +26,28 @@
     "tags": ["design", "code"],
     "live": "https://maliklein.vercel.app/",
     "github": "https://github.com/amekatze/portfolio2023"
+  },
+  {
+    "id": 4,
+    "title": "Remote Nakama",
+    "description": "Video Call Application with integrated Admin Dashboard.",
+    "images": [
+      "/images/remotenakama/rooms.png",
+      "/images/remotenakama/add_room.png",
+      "/images/remotenakama/groups.png",
+      "/images/remotenakama/groups_2.png",
+      "/images/remotenakama/add_user.png",
+      "/images/remotenakama/screenshare.png"
+    ],
+    "cover": "/images/remotenakama/signin.png",
+    "tags": ["design", "code"]
+  },
+  {
+    "id": 5,
+    "title": "Kendo Club Cambridge Landing Page",
+    "description": "Landing Page for Cambridge Kendo Club",
+    "images": ["/images/kendo_landing.png"],
+    "cover": "/images/kendo_landing.png",
+    "tags": ["design"]
   }
 ]

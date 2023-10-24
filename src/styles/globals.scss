@@ -187,6 +187,13 @@ h1 {
   }
 }
 
+.icons {
+  filter: var(--svg);
+}
+.icons:hover {
+  filter: brightness(8) invert(0);
+}
+
 .text-container {
   z-index: 100;
   display: flex;
