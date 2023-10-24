@@ -51,7 +51,7 @@ export default function Project() {
       {project && (
         <div className="flex flex-col justify-center items-center w-full relative">
           <p className="text-xl mb-2">Project Images</p>
-          <div className="relative flex items-center justify-center gap-6">
+          <div className="relative flex items-center justify-center gap-4 w-[80%]">
             {project.images.length > 1 && (
               <Image
                 src="/icons/arrow.svg"
@@ -64,8 +64,8 @@ export default function Project() {
             )}
             <Image
               src={project.images[currentImageIndex]}
-              width={800}
-              height={800}
+              width={700}
+              height={700}
               alt="Project Image"
               className="rounded-md mb-2"
             />
