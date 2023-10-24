@@ -19,19 +19,23 @@ export default function Project() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const goToNextImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % project.images.length
-    );
+    if (project) {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % project.images.length
+      );
+    }
   };
 
   const goToPrevImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + project.images.length) % project.images.length
-    );
+    if (project) {
+      setCurrentImageIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + project.images.length) % project.images.length
+      );
+    }
   };
 
-  const handleMiniImageClick = (index) => {
+  const handleMiniImageClick = (index: any) => {
     setCurrentImageIndex(index);
   };
 
