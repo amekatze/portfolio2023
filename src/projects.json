@@ -30,21 +30,21 @@
   {
     "id": 4,
     "title": "Remote Nakama",
-    "description": "Video Call Application with integrated Admin Dashboard.",
+    "description": "Video Call Application with integrated Admin Dashboard. Designed and developed for AVR Japan.",
     "images": [
       "/images/remotenakama/rooms.png",
       "/images/remotenakama/add_room.png",
-      "/images/remotenakama/groups.png",
-      "/images/remotenakama/groups_2.png",
+      "/images/remotenakama/jp_groups.png",
+      "/images/remotenakama/group_user.png",
       "/images/remotenakama/add_user.png",
       "/images/remotenakama/screenshare.png"
     ],
-    "cover": "/images/remotenakama/signin.png",
+    "cover": "/images/remotenakama/rooms.png",
     "tags": ["design", "code"]
   },
   {
     "id": 5,
-    "title": "Kendo Club Cambridge Landing Page",
+    "title": "Cambridge Kendo Club Landing Page",
     "description": "Landing Page for Cambridge Kendo Club",
     "images": ["/images/kendo_landing.png"],
     "cover": "/images/kendo_landing.png",

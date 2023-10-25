@@ -62,13 +62,15 @@ export default function Project() {
                 className="rounded-md mb-2 cursor-pointer rotate-180 icons"
               />
             )}
+
             <Image
               src={project.images[currentImageIndex]}
-              width={700}
-              height={700}
+              width={800}
+              height={800}
               alt="Project Image"
-              className="rounded-md mb-2"
+              className="rounded-md mb-2 w-full"
             />
+
             {project.images.length > 1 && (
               <Image
                 src="/icons/arrow.svg"
@@ -87,7 +89,7 @@ export default function Project() {
                   key={index}
                   src={image}
                   alt={`Mini Image ${index}`}
-                  className={`hover:brightness-50 md:w-28 w-20 cursor-pointer ${
+                  className={`rounded-md hover:brightness-50 md:w-28 w-20 cursor-pointer ${
                     index === currentImageIndex ? "selected" : ""
                   } `}
                   onClick={() => handleMiniImageClick(index)}
