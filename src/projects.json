@@ -37,7 +37,8 @@
       "/images/remotenakama/jp_groups.png",
       "/images/remotenakama/group_user.png",
       "/images/remotenakama/add_user.png",
-      "/images/remotenakama/screenshare.png"
+      "/images/remotenakama/screenshare.png",
+      "/images/remotenakama/glasses_ui.png"
     ],
     "cover": "/images/remotenakama/rooms.png",
     "tags": ["design", "code"]
